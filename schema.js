@@ -29,8 +29,12 @@ const RocketType = new GraphQLObjectType({
         rocket_id:{type: GraphQLString},
         rocket_name:{type: GraphQLString},
         rocket_type:{type: GraphQLString},
+        cost_per_launch:{type: GraphQLInt},
+        company:{type: GraphQLString},
+        country:{type: GraphQLString},
     })
 });
+
 
 // Root Query
 const RootQuery = new GraphQLObjectType({
