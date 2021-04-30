@@ -8,8 +8,10 @@ import './App.css';
 import logo from './logo.png';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql'
+  uri: '/graphql'
 });
+
+// for development : http://localhost:4000/graphql
 
 function App () {
     return (
